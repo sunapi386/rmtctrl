@@ -1,0 +1,156 @@
+Ready to decode IR!
+
+
+
+Received: 
+
+OFF 	ON
+10460 usec, 52280 usec
+100 usec, 160 usec
+11164 usec, 2380 usec
+20 usec, 58100 usec
+80 usec, 200 usec
+61780 usec, 660 usec
+0 usec, 8980 usec
+0 usec, 22720 usec
+40 usec, 160 usec
+80 usec, 140 usec
+int IRsignal[] = {
+// ON, OFF (in 10's of microseconds)
+	5228, 10,
+	16, 1116,
+	238, 2,
+	5810, 8,
+	20, 6178,
+	66, 0,
+	898, 0,
+	2272, 4,
+	16, 8,
+	14, 0};
+
+
+Received: 
+
+OFF 	ON
+26956 usec, 2860 usec
+660 usec, 660 usec
+200 usec, 660 usec
+220 usec, 640 usec
+660 usec, 640 usec
+660 usec, 1480 usec
+700 usec, 640 usec
+220 usec, 640 usec
+240 usec, 620 usec
+240 usec, 620 usec
+260 usec, 620 usec
+240 usec, 620 usec
+240 usec, 620 usec
+260 usec, 600 usec
+260 usec, 620 usec
+260 usec, 1000 usec
+300 usec, 560 usec
+300 usec, 580 usec
+720 usec, 600 usec
+280 usec, 1000 usec
+740 usec, 1020 usec
+720 usec, 1020 usec
+720 usec, 1000 usec
+300 usec, 580 usec
+720 usec, 580 usec
+300 usec, 1000 usec
+740 usec, 1000 usec
+300 usec, 560 usec
+740 usec, 580 usec
+300 usec, 560 usec
+2364 usec, 2840 usec
+660 usec, 660 usec
+220 usec, 640 usec
+220 usec, 660 usec
+640 usec, 640 usec
+660 usec, 1500 usec
+680 usec, 640 usec
+240 usec, 620 usec
+240 usec, 640 usec
+240 usec, 620 usec
+240 usec, 620 usec
+260 usec, 620 usec
+240 usec, 620 usec
+240 usec, 620 usec
+260 usec, 600 usec
+260 usec, 1020 usec
+280 usec, 580 usec
+300 usec, 580 usec
+720 usec, 580 usec
+280 usec, 1020 usec
+720 usec, 1020 usec
+740 usec, 1000 usec
+740 usec, 1000 usec
+300 usec, 560 usec
+740 usec, 560 usec
+300 usec, 1000 usec
+760 usec, 1000 usec
+300 usec, 560 usec
+740 usec, 560 usec
+300 usec, 560 usec
+int IRsignal[] = {
+// ON, OFF (in 10's of microseconds)
+	286, 66,
+	66, 20,
+	66, 22,
+	64, 66,
+	64, 66,
+	148, 70,
+	64, 22,
+	64, 24,
+	62, 24,
+	62, 26,
+	62, 24,
+	62, 24,
+	62, 26,
+	60, 26,
+	62, 26,
+	100, 30,
+	56, 30,
+	58, 72,
+	60, 28,
+	100, 74,
+	102, 72,
+	102, 72,
+	100, 30,
+	58, 72,
+	58, 30,
+	100, 74,
+	100, 30,
+	56, 74,
+	58, 30,
+	56, 236,
+	284, 66,
+	66, 22,
+	64, 22,
+	66, 64,
+	64, 66,
+	150, 68,
+	64, 24,
+	62, 24,
+	64, 24,
+	62, 24,
+	62, 26,
+	62, 24,
+	62, 24,
+	62, 26,
+	60, 26,
+	102, 28,
+	58, 30,
+	58, 72,
+	58, 28,
+	102, 72,
+	102, 74,
+	100, 74,
+	100, 30,
+	56, 74,
+	56, 30,
+	100, 76,
+	100, 30,
+	56, 74,
+	56, 30,
+	56, 0};

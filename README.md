@@ -1,10 +1,6 @@
-
-<TITLE>RemoteCTRL</TITLE>
-
 <h1>RemoteCTRL</h1>
 
-<p> 
-This is the documentation/prototyping page for the Android RemoteCTRL project. Start date April 28, 2013.</p>
+This is the documentation/prototyping page for the Android RemoteCTRL project. Start date April 28, 2013.
 
 <h2>Overview</h2>
 
