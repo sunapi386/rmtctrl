@@ -1,5 +1,5 @@
 /* Raw IR decoder sketch
-Prints array of IR timings. Ver 1
+Prints array of IR timings in C array style. Ver 2
 This sketch/program uses the Arduno and a PNA4602 to
 decode IR received. This can be used to make a IR receiver
 (by looking for a particular code)
@@ -81,14 +81,14 @@ void loop(void) {
 }
  
 void printpulses(void) {
-  Serial.println("\n\r\n\rReceived: \n\rOFF \tON");
-  for (uint8_t i = 0; i < currentpulse; i++) {
-    Serial.print(pulses[i][0] * RESOLUTION, DEC);
-    Serial.print(" usec, ");
-    Serial.print(pulses[i][1] * RESOLUTION, DEC);
-    Serial.println(" usec");
-  }
-  
+//  Serial.println("\n\r\n\rReceived: \n\rOFF \tON");
+//  for (uint8_t i = 0; i < currentpulse; i++) {
+//    Serial.print(pulses[i][0] * RESOLUTION, DEC);
+//    Serial.print(" usec, ");
+//    Serial.print(pulses[i][1] * RESOLUTION, DEC);
+//    Serial.println(" usec");
+//  }
+// 
   // print it in a 'array' format
   Serial.println("int IRsignal[] = {");
   Serial.println("// ON, OFF (in 10's of microseconds)");
@@ -101,5 +101,5 @@ void printpulses(void) {
   }
   Serial.print("\t"); // tab
   Serial.print(pulses[currentpulse-1][1] * RESOLUTION / 10, DEC);
-  Serial.print(", 0};");
-}
+  Serial.print(", 0\n};\n\n");
+} 
