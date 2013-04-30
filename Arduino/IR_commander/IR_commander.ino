@@ -33,7 +33,23 @@
 uint16_t pulses[NUMPULSES][2];  // pair is high and low pulse 
 uint8_t currentpulse = 0; // index for pulses we're storing
 
-#include "ircodes.h"
+// For DELL remote:
+#include "ir_dell_codes.h"
+
+// For APPLE remote:
+// #include "ircodes.h"
+
+void checksignal (int numberpulses) {
+  if (IRcompare(numberpulses, DELL_VOL_MUTE,sizeof(DELL_VOL_MUTE)/4)) {
+    Serial.println("DELL_VOL_MUTE");
+  }
+  if (IRcompare(numberpulses, DELL_VOL_DOWN,sizeof(DELL_VOL_DOWN)/4)) {
+    Serial.println("DELL_VOL_DOWN");
+  }
+  if (IRcompare(numberpulses, DELL_VOL_UP,sizeof(DELL_VOL_UP)/4)) {
+    Serial.println("DELL_VOL_UP");
+  }
+}
 
 void setup(void) {
   Serial.begin(9600);
@@ -48,15 +64,9 @@ void loop(void) {
   Serial.print("Heard ");
   Serial.print(numberpulses);
   Serial.println("-pulse long IR signal");
-  if (IRcompare(numberpulses, ApplePlaySignal,sizeof(ApplePlaySignal)/4)) {
-    Serial.println("PLAY");
-  }
-    if (IRcompare(numberpulses, AppleRewindSignal,sizeof(AppleRewindSignal)/4)) {
-    Serial.println("REWIND");
-  }
-    if (IRcompare(numberpulses, AppleForwardSignal,sizeof(AppleForwardSignal)/4)) {
-    Serial.println("FORWARD");
-  }
+  
+  checksignal (numberpulses);
+
   delay(500);
 }
 
