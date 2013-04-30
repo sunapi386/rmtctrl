@@ -17,6 +17,7 @@
 #define IRpin_PIN      PIND
 #define IRpin          2
 
+
 // the maximum pulse we'll listen for - 65 milliseconds is a long time
 #define MAXPULSE 65000
 #define NUMPULSES 50
@@ -27,7 +28,10 @@
 #define RESOLUTION 20 
 
 // What percent we will allow in variation to match the same code
-#define FUZZINESS 20
+#define FUZZINESS 35
+
+// DEBUG MODE?
+//#define DEBUG          
 
 // we will store up to 100 pulse pairs (this is -a lot-)
 uint16_t pulses[NUMPULSES][2];  // pair is high and low pulse 
@@ -39,7 +43,16 @@ uint8_t currentpulse = 0; // index for pulses we're storing
 // For APPLE remote:
 // #include "ircodes.h"
 
-void checksignal (int numberpulses) {
+void checksignal (void) {
+  int numberpulses;
+  
+  numberpulses = listenForIR();
+  
+//  Serial.print("Heard ");
+//  Serial.print(numberpulses);
+//  Serial.println("-pulse long IR signal");
+
+  // checksignal (numberpulses);
   if (IRcompare(numberpulses, DELL_VOL_MUTE,sizeof(DELL_VOL_MUTE)/4)) {
     Serial.println("DELL_VOL_MUTE");
   }
@@ -49,32 +62,20 @@ void checksignal (int numberpulses) {
   if (IRcompare(numberpulses, DELL_VOL_UP,sizeof(DELL_VOL_UP)/4)) {
     Serial.println("DELL_VOL_UP");
   }
-}
-
-void setup(void) {
-  Serial.begin(9600);
-  Serial.println("Ready to decode IR!");
-}
-
-void loop(void) {
-  int numberpulses;
+  if (IRcompare(numberpulses, DELL_VOL_UP2,sizeof(DELL_VOL_UP2)/4)) {
+    Serial.println("DELL_VOL_UP2");
+  }
   
-  numberpulses = listenForIR();
-  
-  Serial.print("Heard ");
-  Serial.print(numberpulses);
-  Serial.println("-pulse long IR signal");
-  
-  checksignal (numberpulses);
-
   delay(500);
 }
+
+
 
 //KGO: added size of compare sample. Only compare the minimum of the two
 boolean IRcompare(int numpulses, int Signal[], int refsize) {
   int count = min(numpulses,refsize);
-  Serial.print("count set to: ");
-  Serial.println(count);
+//  Serial.print("count set to: ");
+//  Serial.println(count);
   for (int i=0; i< count-1; i++) {
     int oncode = pulses[i][1] * RESOLUTION / 10;
     int offcode = pulses[i+1][0] * RESOLUTION / 10;
@@ -171,12 +172,13 @@ int listenForIR(void) {
 }
 void printpulses(void) {
   Serial.println("\n\r\n\rReceived: \n\rOFF \tON");
-  for (uint8_t i = 0; i < currentpulse; i++) {
-    Serial.print(pulses[i][0] * RESOLUTION, DEC);
-    Serial.print(" usec, ");
-    Serial.print(pulses[i][1] * RESOLUTION, DEC);
-    Serial.println(" usec");
-  }
+  // Don't want to print 660 usec, 620 usec
+  // for (uint8_t i = 0; i < currentpulse; i++) {
+  //   Serial.print(pulses[i][0] * RESOLUTION, DEC);
+  //   Serial.print(" usec, ");
+  //   Serial.print(pulses[i][1] * RESOLUTION, DEC);
+  //   Serial.println(" usec");
+  // }
   
   // print it in a 'array' format
   Serial.println("int IRsignal[] = {");
@@ -193,3 +195,14 @@ void printpulses(void) {
   Serial.print(", 0};");
 }
 
+void setup(void) {
+  Serial.begin(9600);
+  Serial.println("Ready to decode IR!");
+}
+
+void loop(void) {
+//  int n;
+//  n = listenForIR();
+//  printpulses();
+ checksignal();
+}
