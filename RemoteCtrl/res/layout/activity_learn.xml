@@ -9,8 +9,46 @@
     tools:context=".LearnActivity" >
 
     <TextView
+        android:id="@+id/learn_textview_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/intro_learn" />
+        android:text="@string/learn_intro" />
+
+    <TextView
+        android:id="@+id/learn_textview_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/learn_textview_intro"
+        android:layout_centerVertical="true"
+        android:text="@string/learn_text_choose" />
+
+    <EditText
+        android:id="@+id/learn_textfield_signal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/learn_textview_intro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/learn_hint_signal_name" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/learn_button_learn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/learn_textfield_signal_name"
+        android:layout_centerHorizontal="true"
+        android:text="@string/learn_button_name" />
+
+    <ListView
+        android:id="@+id/listView_existing_captures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/learn_textview_choose"
+        android:layout_below="@+id/learn_textview_choose" >
+    </ListView>
 
 </RelativeLayout>

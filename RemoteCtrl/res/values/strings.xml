@@ -10,8 +10,11 @@
     <string name="title_activity_connect">Connect</string>
     <string name="title_activity_learn">Learn Signal</string>
     <string name="title_activity_play">Playback</string>
-    <string name="intro_learn">In this menu, you can learn a signal.  Enter a name for the button that we are learning and direct the remote into the IR reader and press that button.</string>
-    <string name="intro_play">Playback is your menu of the buttons that you\'ve learned. Pressing the learned button will emit the same signal back from the IR module.</string>
-    <string name="intro_connect">Connectivity menu is for pairing with your IR module. Enable bluetooth on your phone and pair.</string>
+    <string name="learn_intro">In this menu, you can learn a signal.  Enter a name for the button that we are learning and direct the remote into the IR reader and press that button.</string>
+    <string name="play_intro">Playback is your menu of the buttons that you\'ve learned. Pressing the learned button will emit the same signal back from the IR module.</string>
+    <string name="connect_intro">Connectivity menu is for pairing with your IR module. Enable bluetooth on your phone and pair.</string>
+    <string name="learn_text_choose">Current learned list, select one to override.</string>
+    <string name="learn_button_name">Capture Signal</string>
+    <string name="learn_hint_signal_name">Enter name for the signal</string>
 
 </resources>
