@@ -26,18 +26,15 @@ public class MainActivity extends Activity {
     public void connectify(View view) {
         // Do something in response to button
     	Intent intent = new Intent(this, ConnectActivity.class);
-    	startActivity(intent);
     }
     /** Called when the user clicks the LEARN button */
     public void learnify(View view) {
         // Do something in response to button
     	Intent intent = new Intent(this, LearnActivity.class);
-    	startActivity(intent);
     }
     /** Called when the user clicks the PLAY button */
     public void playify(View view) {
         // Do something in response to button
     	Intent intent = new Intent(this, PlayActivity.class);
-    	startActivity(intent);
     }
 }

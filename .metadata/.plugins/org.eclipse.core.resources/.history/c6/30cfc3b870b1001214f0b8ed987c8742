@@ -22,22 +22,19 @@ public class MainActivity extends Activity {
         return true;
     }
     
-    /** Called when the user clicks the CONNECT button */
+    /** Called when the user clicks the Connecitfy button */
     public void connectify(View view) {
         // Do something in response to button
     	Intent intent = new Intent(this, ConnectActivity.class);
-    	startActivity(intent);
     }
-    /** Called when the user clicks the LEARN button */
+    /** Called when the user clicks the Connecitfy button */
     public void learnify(View view) {
         // Do something in response to button
     	Intent intent = new Intent(this, LearnActivity.class);
-    	startActivity(intent);
     }
-    /** Called when the user clicks the PLAY button */
+    /** Called when the user clicks the Connecitfy button */
     public void playify(View view) {
         // Do something in response to button
     	Intent intent = new Intent(this, PlayActivity.class);
-    	startActivity(intent);
     }
 }
