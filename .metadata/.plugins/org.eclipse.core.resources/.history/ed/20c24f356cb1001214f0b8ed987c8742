@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:sca=""
     tools:context=".MainActivity" >
 
     <Button
@@ -15,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:text="@string/button_connectivity" />
+        android:text="Connectivity" />
 
     <Button
         android:id="@+id/button_playback"
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button_learn"
         android:layout_below="@+id/button_learn"
-        android:text="@string/button_playback" />
+        android:text="Playback" />
 
     <Button
         android:id="@+id/button_learn"
@@ -31,6 +32,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button_connectivity"
         android:layout_below="@+id/button_connectivity"
-        android:text="@string/button_learn" />
+        android:text="Learn Signal" />
 
 </RelativeLayout>
