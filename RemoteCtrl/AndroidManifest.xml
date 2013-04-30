@@ -22,6 +22,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.remotectrl.ConnectActivity"
+            android:label="@string/title_activity_connect"
+            android:parentActivityName="com.example.remotectrl.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.remotectrl.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.remotectrl.LearnActivity"
+            android:label="@string/title_activity_learn"
+            android:parentActivityName="com.example.remotectrl.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.remotectrl.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.remotectrl.PlayActivity"
+            android:label="@string/title_activity_play"
+            android:parentActivityName="com.example.remotectrl.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.remotectrl.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

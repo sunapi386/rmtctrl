@@ -1,8 +1,10 @@
 package com.example.remotectrl;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 
 public class MainActivity extends Activity {
 
@@ -20,4 +22,19 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    /** Called when the user clicks the Connecitfy button */
+    public void connectify(View view) {
+        // Do something in response to button
+    	Intent intent = new Intent(this, ConnectActivity.class);
+    }
+    /** Called when the user clicks the Connecitfy button */
+    public void learnify(View view) {
+        // Do something in response to button
+    	Intent intent = new Intent(this, LearnActivity.class);
+    }
+    /** Called when the user clicks the Connecitfy button */
+    public void playify(View view) {
+        // Do something in response to button
+    	Intent intent = new Intent(this, PlayActivity.class);
+    }
 }
