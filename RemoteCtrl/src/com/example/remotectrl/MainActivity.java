@@ -3,6 +3,7 @@ package com.example.remotectrl;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
@@ -39,5 +40,12 @@ public class MainActivity extends Activity {
         // Do something in response to button
     	Intent intent = new Intent(this, PlayActivity.class);
     	startActivity(intent);
+    }
+    /** Called when the user clicks the ADVANCED button */
+    public void advanced(View view) {
+        // Do something in response to button
+//    	Intent intent = new Intent(this, AdvancedActivity.class);
+//    	startActivity(intent);
+    	Log.w("Remote CTRL", "advanced mode");
     }
 }

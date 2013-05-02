@@ -16,5 +16,7 @@
     <string name="learn_text_choose">Current learned list, select one to override.</string>
     <string name="learn_button_name">Capture Signal</string>
     <string name="learn_hint_signal_name">Enter name for the signal</string>
+    <string name="main_button_advanced">Advanced</string>
+    <string name="title_activity_guess">GuessActivity</string>
 
 </resources>

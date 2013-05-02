@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=RemoteCtrl
+task-tag-projects-already-scanned=RemoteCtrl,MicroJobs,GameActivity,LunarLander,MainActivity,SkeletonActivity,VoiceRecognitionSettings,tests
