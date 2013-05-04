@@ -22,27 +22,6 @@
         android:layout_centerVertical="true"
         android:text="@string/learn_text_choose" />
 
-    <EditText
-        android:id="@+id/learn_textfield_signal_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/learn_textview_intro"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
-        android:ems="10"
-        android:hint="@string/learn_hint_signal_name" >
-
-        <requestFocus />
-    </EditText>
-
-    <Button
-        android:id="@+id/learn_button_learn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/learn_textfield_signal_name"
-        android:layout_centerHorizontal="true"
-        android:text="@string/learn_button_name" />
-
     <ListView
         android:id="@+id/listView_existing_captures"
         android:layout_width="match_parent"
@@ -50,5 +29,41 @@
         android:layout_alignLeft="@+id/learn_textview_choose"
         android:layout_below="@+id/learn_textview_choose" >
     </ListView>
+
+    <ImageButton
+        android:id="@+id/btn_learn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/learn_textfield_signal_name"
+        android:layout_below="@+id/learn_textfield_signal_name"
+        android:contentDescription="@string/btn_learn_delete"
+        android:src="@drawable/ic_learn_delete" />
+
+    <ImageButton
+        android:id="@+id/btn_learn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/learn_textfield_signal_name"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/btn_learn_save"
+        android:src="@drawable/ic_learn_save" />
+
+    <EditText
+        android:id="@+id/learn_textfield_signal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/learn_textview_intro"
+        android:layout_below="@+id/learn_textview_intro"
+        android:ems="10"
+        android:hint="@string/learn_hint_signal_name" />
+
+    <ImageButton
+        android:id="@+id/btn_learn_compose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/learn_textfield_signal_name"
+        android:layout_below="@+id/learn_textfield_signal_name"
+        android:contentDescription="@string/btn_learn_learn"
+        android:src="@drawable/ic_learn_compose" />
 
 </RelativeLayout>

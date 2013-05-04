@@ -44,8 +44,8 @@ public class MainActivity extends Activity {
     /** Called when the user clicks the ADVANCED button */
     public void advanced(View view) {
         // Do something in response to button
-//    	Intent intent = new Intent(this, AdvancedActivity.class);
-//    	startActivity(intent);
+    	Intent intent = new Intent(this, AdvancedActivity.class);
+    	startActivity(intent);
     	Log.w("Remote CTRL", "advanced mode");
     }
 }

@@ -18,5 +18,9 @@
     <string name="learn_hint_signal_name">Enter name for the signal</string>
     <string name="main_button_advanced">Advanced</string>
     <string name="title_activity_guess">GuessActivity</string>
+    <string name="btn_learn_delete">Delete</string>
+    <string name="btn_learn_learn">Learn</string>
+    <string name="btn_learn_save">Save</string>
+    <string name="title_activity_advanced">AdvancedActivity</string>
 
 </resources>

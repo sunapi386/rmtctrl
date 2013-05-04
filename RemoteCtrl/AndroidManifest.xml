@@ -56,10 +56,15 @@
             android:name="com.example.remotectrl.GuessActivity"
             android:label="@string/title_activity_guess" >
         </activity>
-        
+
         <meta-data
-    		android:name="com.google.android.maps.v2.API_KEY"
-    		android:value="AIzaSyCjI3gNVzTA-2FgLqMwdbbcEVP3ZyAH0T8"/>
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCjI3gNVzTA-2FgLqMwdbbcEVP3ZyAH0T8" />
+
+        <activity
+            android:name="com.example.remotectrl.AdvancedActivity"
+            android:label="@string/title_activity_advanced" >
+        </activity>
     </application>
 
 </manifest>
