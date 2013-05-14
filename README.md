@@ -11,11 +11,15 @@ In a typical home theatre system, there are too many remotes: tv, dvd/bluray, am
 
 <h3>Android Application</h3>
 The applications has three main functionality:
-1 - Connect & pair with Arduino over bluetooth. Not implemented.
-2 - Learn remote signal code. Stores data & signal name in db (SQLite), masked by a content provider. Not fully functional.
-3 - Replicate signal. Pulls in db content and displays them as buttons.
+<ol>
+<li>Connect & pair with Arduino over bluetooth. Not implemented. </li>
+<li>Learn remote signal code. Stores data & signal name in db (SQLite), masked by a content provider. Not fully functional. </li>
+<li> - Replicate signal. Pulls in db content and displays them as buttons.</li>
+</ol>
 
 <h3>Hardware</h3>
 Two functionality:
-1 - Pair with phone over bluetooth. Not implemented.
-2 - Abel to receive & send IR signals. Used a 38kHz IR reader and 940nm IR led. This works.
+<ol>
+<li>Pair with phone over bluetooth. Not implemented.</li>
+<li>Abel to receive & send IR signals. Used a 38kHz IR reader and 940nm IR led. This works.</li>
+</ol>
