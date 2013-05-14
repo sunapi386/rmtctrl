@@ -1,9 +1,9 @@
 Update May 14: This project's development has been discontinued. No further updates on android app & arduino remote IR blaster.
+An exact replicate of this already out: http://www.youtube.com/watch?v=4NEX6loZFhE
+
 <h1>RemoteCTRL</h1>
 
 This is the documentation/prototyping page for the Android RemoteCTRL project. Start date April 28, 2013.
-
-An exact replicate of this already out: http://www.youtube.com/watch?v=4NEX6loZFhE
 
 <h2>Overview</h2>
 
@@ -14,7 +14,7 @@ The applications has three main functionality:
 <ol>
 <li>Connect & pair with Arduino over bluetooth. Not implemented. </li>
 <li>Learn remote signal code. Stores data & signal name in db (SQLite), masked by a content provider. Not fully functional. </li>
-<li> - Replicate signal. Pulls in db content and displays them as buttons.</li>
+<li>Replicate signal. Pulls in db content and displays them as buttons.</li>
 </ol>
 
 <h3>Hardware</h3>
